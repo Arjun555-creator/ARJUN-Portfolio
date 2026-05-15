@@ -20,7 +20,7 @@
       justify-content: center;
     }
     header img {
-      width: 200px; /* bigger photo */
+      width: 200px;
       height: 200px;
       object-fit: cover;
       border: 2px solid #ffffff; /* white outline */
@@ -50,6 +50,7 @@
       padding: 10px;
       border-radius: 5px;
       color: #ffffff; /* White text */
+      cursor: pointer;
     }
     a {
       color: #ffffff; /* White links */
@@ -63,6 +64,16 @@
       color: #ffffff;
       text-align: center;
       padding: 10px;
+    }
+
+    /* Hidden project details */
+    .project-details {
+      display: none;
+      background: #333333;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-size: 0.95em;
     }
 
     /* 📱 Mobile adjustments */
@@ -108,7 +119,20 @@
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><a href="#">Sensor Data Logger</a></li>
+      <li onclick="toggleDetails('phase1')">Phase 1 Project
+        <div id="phase1" class="project-details">
+          <p>Designed a basic embedded system using microcontrollers.</p>
+          <p>Implemented sensor interfacing and simple data logging.</p>
+          <p>Focused on building strong fundamentals in hardware and coding.</p>
+        </div>
+      </li>
+      <li onclick="toggleDetails('phase2')">Phase 2 Project
+        <div id="phase2" class="project-details">
+          <p>Developed an advanced IoT prototype with ESP32.</p>
+          <p>Integrated communication protocols for real-time monitoring.</p>
+          <p>Enhanced project scope with EV-related applications.</p>
+        </div>
+      </li>
       <li><a href="#">EV Battery Monitor Prototype</a></li>
       <li><a href="#">IoT Device with ESP32</a></li>
     </ul>
@@ -124,5 +148,12 @@
   <footer>
     <p>© 2026 ARJUN | Portfolio</p>
   </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const box = document.getElementById(id);
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
