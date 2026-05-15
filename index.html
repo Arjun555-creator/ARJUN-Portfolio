@@ -2,109 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ARJUN K Portfolio</title>
+  <title>ARJUN K Portfolio - About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #000000; /* Black background */
-      color: #ffffff;      /* White text */
-    }
-    header {
-      background: #111111;
-      color: #ffffff;
-      padding: 20px;
-      display: flex; /* side-by-side layout */
-      align-items: center;
-      justify-content: center;
-    }
-    header img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border: 2px solid #ffffff; /* white outline */
-      margin-right: 20px;
-    }
-    header .intro {
-      text-align: left;
-    }
-    header h1 {
-      font-size: 2em;
-      margin: 0;
-      text-transform: uppercase; /* ARJUN in caps */
-    }
-    section {
-      padding: 20px;
-    }
-    h2 {
-      color: #444444; /* Dark gray headings */
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #222222;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 5px;
-      color: #ffffff; /* White text */
-      cursor: pointer;
-    }
-    a {
-      color: #ffffff; /* White links */
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #111111;
-      color: #ffffff;
-      text-align: center;
-      padding: 10px;
-    }
-
-    /* Hidden project details */
-    .project-details {
-      display: none;
-      background: #333333;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 5px;
-      font-size: 0.95em;
-    }
-
-    /* 📱 Mobile adjustments */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column; /* stack photo and text */
-        text-align: center;
-      }
-      header img {
-        margin: 0 0 15px 0;
-        width: 150px;
-        height: 150px;
-      }
-      header .intro {
-        text-align: center;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #000; color: #fff; }
+    nav { background: #111; padding: 10px 20px; position: fixed; top: 0; right: 0; width: 100%; display: flex; justify-content: flex-end; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav li { margin-left: 20px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #888; }
+    header { margin-top: 70px; text-align: center; padding: 20px; }
+    h2 { color: #444; }
+    ul { list-style: none; padding: 0; }
+    li { background: #222; margin: 10px 0; padding: 10px; border-radius: 5px; }
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="credentials.html">Credentials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <img src="profile.jpg" alt="Arjun's photo">
-    <div class="intro">
-      <h1>HI, I'M ARJUN 👋</h1>
-      <p>Embedded Systems Enthusiast | IoT & EV Projects</p>
-    </div>
+    <h1>HI, I'M ARJUN 👋</h1>
+    <p>Embedded Systems Enthusiast | IoT & EV Projects</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>I’m passionate about embedded systems and electric vehicles. Currently preparing for Testing & Commissioning work and building projects in IoT and power electronics.</p>
+    <p>I’m passionate about embedded systems and electric vehicles. Preparing for Testing & Commissioning work and building projects in IoT and power electronics.</p>
   </section>
 
   <section>
@@ -113,47 +43,17 @@
       <li>Embedded C, STM32, Arduino</li>
       <li>Communication Protocols: UART, I2C, SPI, CAN</li>
       <li>IoT Development & Power Electronics Basics</li>
+      <li>Soft Skills: Teamwork, Problem Solving, Adaptability</li>
     </ul>
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>Education</h2>
     <ul>
-      <li onclick="toggleDetails('phase1')">Phase 1 – Smart Management of Hydroponics Using IoT
-        <div id="phase1" class="project-details">
-          <p>Developed a system using a color sensor and water level sensor connected to an ESP8266 for IoT monitoring.</p>
-          <p>Integrated a water pump that activates automatically based on sensor readings, ensuring efficient water management.</p>
-          <p>Focused on real‑time sensing, wireless control, and automation as the foundation for later energy harvesting integration.</p>
-        </div>
-      </li>
-      <li onclick="toggleDetails('phase2')">Phase 2 – Smart Management of Hydroponics Using IoT with Piezoelectric Energy
-        <div id="phase2" class="project-details">
-          <p>Designed a system using piezo discs connected in parallel to capture energy from footsteps.</p>
-          <p>Energy was stored in a supercapacitor and regulated through a TP4056 module to safely charge a Li‑ion battery.</p>
-          <p>Integrated with Blynk IoT for real‑time monitoring of voltage and battery status, with outputs powering small devices like sensors and displays.</p>
-        </div>
-      </li>
-      <li><a href="#">EV Battery Monitor Prototype</a></li>
-      <li><a href="#">IoT Device with ESP32</a></li>
+      <li>B.E. Electronics & Communication Engineering – 85%</li>
+      <li>Higher Secondary – 90%</li>
+      <li>SSLC – 92%</li>
     </ul>
   </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: arjun64345@gmail.com</p>
-    <p>Phone: <a href="tel:+919487362777">+91 94873 62777</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/arjun-karunakaran">linkedin.com/in/arjun</a></p>
-  </section>
-
-  <footer>
-    <p>© 2026 ARJUN | Portfolio</p>
-  </footer>
-
-  <script>
-    function toggleDetails(id) {
-      const box = document.getElementById(id);
-      box.style.display = (box.style.display === "block") ? "none" : "block";
-    }
-  </script>
 </body>
 </html>
