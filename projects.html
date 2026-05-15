@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ARJUN K Portfolio - Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #000; color: #fff; }
+    nav { background: #111; padding: 10px 20px; position: fixed; top: 0; right: 0; width: 100%; display: flex; justify-content: flex-end; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav li { margin-left: 20px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #888; }
+    header { margin-top: 70px; text-align: center; padding: 20px; }
+    h2 { color: #444; }
+    .project { background: #222; margin: 15px; padding: 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="credentials.html">Credentials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Projects</h1>
+  </header>
+
+  <section>
+    <div class="project">
+      <h2>Phase 1 – Smart Management of Hydroponics Using IoT</h2>
+      <p>Developed a system using a color sensor and water level sensor connected to an ESP8266 for IoT monitoring.</p>
+      <p>Integrated a water pump that activates automatically based on sensor readings, ensuring efficient water management.</p>
+      <p>Focused on real‑time sensing, wireless control, and automation as the foundation for later energy harvesting integration.</p>
+    </div>
+
+    <div class="project">
+      <h2>Phase 2 – Smart Management of Hydroponics Using IoT with Piezoelectric Energy</h2>
+      <p>Designed a system using piezo discs connected in parallel to capture energy from footsteps.</p>
+      <p>Energy was stored in a supercapacitor and regulated through a TP4056 module to safely charge a Li‑ion battery.</p>
+      <p>Integrated with Blynk IoT for real‑time monitoring of voltage and battery status, with outputs powering small devices like sensors and displays.</p>
+    </div>
+  </section>
+</body>
+</html>
