@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Arjun K Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,7 +20,7 @@
     header img {
       width: 150px;
       height: 150px;
-      object-fit: cover; /* keeps proportions */
+      object-fit: cover;
       border: 2px solid #ffffff; /* white outline */
       margin-bottom: 15px;
     }
@@ -52,6 +53,23 @@
       color: #ffffff;
       text-align: center;
       padding: 10px;
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      section {
+        padding: 10px;
+      }
+      li {
+        font-size: 0.9em;
+      }
     }
   </style>
 </head>
